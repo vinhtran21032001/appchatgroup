@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+        <div class="appchat-gr">        
+                <input type="text" class="inputName" placeholder="Nhập tên của bạn ...">
+                <button class="confirm">Nhấn để tiếp tục</button>
+            <div class="login-room">
+                <div class="heading_app">
+                    <div class="hello-user">
+                        Xin chào <span class="name-user"></span>
+                    </div>
+                    <div class="create-room">
+                        <input type="text" class="findroom" placeholder="Nhập tên phòng ...">
+                        <button class="create-new-room">Tạo phòng mới</button>
+                    </div>
+                </div>
+                <h3 class="caption"> Phòng chat</h3>
+                <div class="container">
+                    <div class="list-room" id="test">
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="message-main">
+                <div class="chat-block">
+                    <div class="message">
+                        <div class="text-content">
+        
+                        </div>
+                    </div>
+                    <div class="send-content">
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bxs-image-alt' ></i>
+                        <i class='bx bxs-folder' ></i>
+                        <input type="text" class="inputmsg">
+                        <i class='bx bxs-smile'></i>
+                        <a type="button" class="sendchat">Gửi</a>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div class="content-right_heading">
+                        <div style="color:#666; font-size: 14px; text-align: left; margin-top: 10px;" >Tên phòng chat</div>
+                        <div class="name-room">
+                        
+                        </div>
+                        <div><button class="logout">Thoát</button></div>
+                    </div>
+                    <div style="color: #666; font-size: 14px;">Thành viên:</div>
+                    <div class="list-member">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<!-- <script>
+    var textContent = document.querySelector('.message');
+    textContent.scrollTo(0,document.querySelector('.text-content').clientHeight)
+</script> -->
+
+<script src="socket.io/socket.io.js"></script>
+<script src="/js/client.js"></script>
+</html>
