@@ -1,6 +1,6 @@
 
 
-var socket = io();
+var socket = io(https://vinhtran21032001.github.io/appchatgroup/resource/views/index.html);
     // Create new user
     var btnCreate = document.querySelector('.confirm');
     btnCreate.onclick = function() {
